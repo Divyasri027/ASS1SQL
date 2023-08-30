@@ -1,0 +1,20 @@
+create database BooksDB;
+use BooksDB;
+create table Books(bookstitle varchar(20),author varchar(10),genre varchar(10),publishedyear int,price int);
+select * from Books;
+insert into Books values(" The Indianstory","BimalJalal","nonfiction",2021,3000);
+insert into Books values(" A placecalledhome","Shenoy","Poverty",2022,5000);
+insert into Books values(" Lal Salam ","Smriti","Hiller",2019,2500);
+insert into Books values(" Queen of fire","Devika","fiction",2020,1500);
+insert into Books values(" Hear Yourself","Prem Rawat","Hear ourself",2018,1800);
+insert into Books values("Tomb of Sand","Geetanjali","journey",2017,1300);
+insert into Books values(" Suparipalana","Salien ","goverance",2016,1000);
+insert into Books values(" The Bench","Meghan","Relations",2015,1200);
+insert into Books values(" The Ickabog","J.KRowling","truth",2014,900);
+insert into Books values(" Let us Dream"," Francis","drean",2013,700);
+update Books set price=700 where price=1100;
+select * from Books;
+select bookstitle from Books;
+select * from Books;
+delete from Books where bookstitle=" Let us Dream";
+
